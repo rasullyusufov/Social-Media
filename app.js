@@ -13,7 +13,7 @@ let white
 
 
 swicht.addEventListener('click', function () {
-
+    mode.textContent = 'Dark Mode'
     if (body.style.backgroundColor == 'white') {
         body.style.backgroundColor = 'rgb(19, 34, 56)';
 
@@ -42,7 +42,7 @@ swicht.addEventListener('click', function () {
     else {
         body.style.backgroundColor = 'white';
         swicht.innerHTML = `<i class="fas fa-toggle-on fa-2x"></i> `
-
+        mode.textContent = 'Light Mode'
         for (let i = 0; i < text.length; i++) {
             text[i].classList.add('black')
         }
